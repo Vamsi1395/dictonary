@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Bree Serif:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #78E3FD;
+}
+.main-container
+{
+    height: 100%;
+    width: 100%;
+    background: #78E3FD;
+}
+.content-container
+{
+    background-color: #ffffff;
+    width: 90vmin;
+    border-radius: 5px;
+    padding: 60px;
+}
+.search-input input{
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #7D53DE;
+    width: 70%;
+    /* font-weight: bold; */
+}
+.search-input input::placeholder
+{
+    font-size: 16px;
+    padding-left: 10px;
+    /* font-weight: 700; */
+    opacity: 60%;
+}
+.search-input button{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #7D53DE;
+    border-radius: 5px;
+}
+.result
+{
+    margin-top: 50px;
+    position: relative;
+}
+.details
+{
+    gap: 10px;
+    color: #b3b6d4;
+}
+.word-meaning
+{
+    color: #575a5b;
+}
+.word-example
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    border-left: 5px solid #7D53DE;
+    padding-left: 20px;
+    font-style: italic;
+    color: #575a5b;
+    font-size: 15px;
+}
+
+
+/*responsive media quires  */
+
+@media screen and (max-width:640px) {
+    .search-input{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .search-input input
+    {
+        width: 100%;
+        font-size: 12px;
+        padding-left: 10px;
+        opacity: 60%;
+    }
+    .search-input input::placeholder{
+        font-size: 12px;
+        opacity: 90%;
+    }
+}
